@@ -1,0 +1,27 @@
+{
+  "_server-BFLOF_BE.js": {
+    "file": "assets/server-BFLOF_BE.js",
+    "name": "server",
+    "dynamicImports": [
+      "app/routes/index.tsx?tsr-split=&tsr-directive-use-server="
+    ]
+  },
+  "app/routes/index.tsx?tsr-split=&tsr-directive-use-server=": {
+    "file": "assets/index-Be9nSCbK.js",
+    "name": "index",
+    "src": "app/routes/index.tsx?tsr-split=&tsr-directive-use-server=",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-BFLOF_BE.js"
+    ]
+  },
+  "virtual:$vinxi/handler/server": {
+    "file": "server.js",
+    "name": "server",
+    "src": "virtual:$vinxi/handler/server",
+    "isEntry": true,
+    "imports": [
+      "_server-BFLOF_BE.js"
+    ]
+  }
+}

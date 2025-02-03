@@ -1,0 +1,35 @@
+{
+  "/Users/mitchaplin/workspace/local-llm-chatbot/app/index.css": {
+    "file": "assets/index-CHFZNU6o.css",
+    "src": "/Users/mitchaplin/workspace/local-llm-chatbot/app/index.css"
+  },
+  "_ssr-C_d9_fLO.js": {
+    "file": "assets/ssr-C_d9_fLO.js",
+    "name": "ssr",
+    "dynamicImports": [
+      "app/routes/index.tsx?tsr-split",
+      "app/routes/index.tsx?tsr-split"
+    ],
+    "assets": [
+      "assets/index-CHFZNU6o.css"
+    ]
+  },
+  "app/routes/index.tsx?tsr-split": {
+    "file": "assets/index-ZImhN3sX.js",
+    "name": "index",
+    "src": "app/routes/index.tsx?tsr-split",
+    "isDynamicEntry": true,
+    "imports": [
+      "_ssr-C_d9_fLO.js"
+    ]
+  },
+  "virtual:$vinxi/handler/ssr": {
+    "file": "ssr.js",
+    "name": "ssr",
+    "src": "virtual:$vinxi/handler/ssr",
+    "isEntry": true,
+    "imports": [
+      "_ssr-C_d9_fLO.js"
+    ]
+  }
+}
