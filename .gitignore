@@ -26,3 +26,7 @@ dist-ssr
 package-lock.json
 count.txt
 app/routeTree.gen.ts
+
+node_modules
+.output
+.vinxi

@@ -16,10 +16,10 @@ import * as node_path$1 from 'node:path';
 import { resolve as resolve$1, dirname as dirname$1, join as join$1 } from 'node:path';
 import invariant from 'vinxi/lib/invariant';
 import { virtualId, handlerModule, join } from 'vinxi/lib/path';
-import { isPlainObject as isPlainObject$1, isRedirect as isRedirect$1, isNotFound, createMemoryHistory, warning, RouterProvider, pick, TSR_DEFERRED_PROMISE, createControlledPromise, isPlainArray, defer as defer$1, createRootRoute, Outlet, ScrollRestoration, createFileRoute, lazyFn, lazyRouteComponent, useRouter, useRouterState, createRouter as createRouter$2 } from '@tanstack/react-router';
+import { isPlainObject as isPlainObject$1, isRedirect as isRedirect$1, isNotFound, createMemoryHistory, warning, RouterProvider, pick, TSR_DEFERRED_PROMISE, createControlledPromise, isPlainArray, defer as defer$1, createRootRoute, Outlet, ScrollRestoration, createFileRoute, lazyRouteComponent, useRouter, useRouterState, createRouter as createRouter$2 } from '@tanstack/react-router';
 import { AsyncLocalStorage } from 'node:async_hooks';
 import { jsx, jsxs, Fragment } from 'react/jsx-runtime';
-import * as Be from 'react';
+import * as Fe from 'react';
 import { createElement } from 'react';
 import J$1 from 'react-dom/server';
 import { ReadableStream as ReadableStream$1 } from 'node:stream/web';
@@ -836,7 +836,7 @@ const H = [
   528734635,
   1541459225
 ];
-const K$2 = [
+const K$1 = [
   1116352408,
   1899447441,
   -1245643825,
@@ -939,7 +939,7 @@ class SHA256 extends Hasher {
       const maj = a & b ^ a & c ^ b & c;
       const sigma0 = (a << 30 | a >>> 2) ^ (a << 19 | a >>> 13) ^ (a << 10 | a >>> 22);
       const sigma1 = (e << 26 | e >>> 6) ^ (e << 21 | e >>> 11) ^ (e << 7 | e >>> 25);
-      const t1 = h + sigma1 + ch + K$2[i] + W$1[i];
+      const t1 = h + sigma1 + ch + K$1[i] + W$1[i];
       const t2 = sigma0 + maj;
       h = g;
       g = f;
@@ -3976,7 +3976,7 @@ function renderHTMLError(error) {
 }
 
 const appConfig$1 = {"name":"vinxi","routers":[{"name":"public","type":"static","dir":"./public","base":"/","root":"/Users/mitchaplin/workspace/local-llm-chatbot","order":0,"outDir":"/Users/mitchaplin/workspace/local-llm-chatbot/.vinxi/build/public"},{"name":"client","type":"client","target":"browser","handler":"app/client.tsx","base":"/_build","build":{"sourcemap":true},"root":"/Users/mitchaplin/workspace/local-llm-chatbot","outDir":"/Users/mitchaplin/workspace/local-llm-chatbot/.vinxi/build/client","order":1},{"name":"ssr","type":"http","target":"server","handler":"app/ssr.tsx","link":{"client":"client"},"root":"/Users/mitchaplin/workspace/local-llm-chatbot","base":"/","outDir":"/Users/mitchaplin/workspace/local-llm-chatbot/.vinxi/build/ssr","order":2},{"name":"server","type":"http","target":"server","base":"/_server","handler":"node_modules/.pnpm/@tanstack+start-server-functions-handler@1.99.2_@types+node@22.13.0_db0@0.2.3_ioredis@5.4.2_j_sjptdzz5yjpef4b6uuddtrxhoe/node_modules/@tanstack/start-server-functions-handler/dist/esm/index.js","root":"/Users/mitchaplin/workspace/local-llm-chatbot","outDir":"/Users/mitchaplin/workspace/local-llm-chatbot/.vinxi/build/server","order":3}],"server":{"preset":"node-server","experimental":{"asyncContext":true}},"root":"/Users/mitchaplin/workspace/local-llm-chatbot"};
-				const buildManifest = {"client":{"/Users/mitchaplin/workspace/local-llm-chatbot/app/index.css":{"file":"assets/index-CHFZNU6o.css","src":"/Users/mitchaplin/workspace/local-llm-chatbot/app/index.css"},"_client-C9K3naXO.js":{"file":"assets/client-C9K3naXO.js","name":"client","dynamicImports":["app/routes/index.tsx?tsr-split","app/routes/index.tsx?tsr-split"],"assets":["assets/index-CHFZNU6o.css"]},"app/routes/index.tsx?tsr-split":{"file":"assets/index-DwZdNnwn.js","name":"index","src":"app/routes/index.tsx?tsr-split","isDynamicEntry":true,"imports":["_client-C9K3naXO.js"]},"virtual:$vinxi/handler/client":{"file":"assets/client-XLNCQ3-F.js","name":"client","src":"virtual:$vinxi/handler/client","isEntry":true,"imports":["_client-C9K3naXO.js"]}},"ssr":{"/Users/mitchaplin/workspace/local-llm-chatbot/app/index.css":{"file":"assets/index-CHFZNU6o.css","src":"/Users/mitchaplin/workspace/local-llm-chatbot/app/index.css"},"_ssr-C_d9_fLO.js":{"file":"assets/ssr-C_d9_fLO.js","name":"ssr","dynamicImports":["app/routes/index.tsx?tsr-split","app/routes/index.tsx?tsr-split"],"assets":["assets/index-CHFZNU6o.css"]},"app/routes/index.tsx?tsr-split":{"file":"assets/index-ZImhN3sX.js","name":"index","src":"app/routes/index.tsx?tsr-split","isDynamicEntry":true,"imports":["_ssr-C_d9_fLO.js"]},"virtual:$vinxi/handler/ssr":{"file":"ssr.js","name":"ssr","src":"virtual:$vinxi/handler/ssr","isEntry":true,"imports":["_ssr-C_d9_fLO.js"]}},"server":{"_server-BFLOF_BE.js":{"file":"assets/server-BFLOF_BE.js","name":"server","dynamicImports":["app/routes/index.tsx?tsr-split=&tsr-directive-use-server="]},"app/routes/index.tsx?tsr-split=&tsr-directive-use-server=":{"file":"assets/index-Be9nSCbK.js","name":"index","src":"app/routes/index.tsx?tsr-split=&tsr-directive-use-server=","isDynamicEntry":true,"imports":["_server-BFLOF_BE.js"]},"virtual:$vinxi/handler/server":{"file":"server.js","name":"server","src":"virtual:$vinxi/handler/server","isEntry":true,"imports":["_server-BFLOF_BE.js"]}}};
+				const buildManifest = {"client":{"/Users/mitchaplin/workspace/local-llm-chatbot/app/index.css":{"file":"assets/index-Dx70-KsC.css","src":"/Users/mitchaplin/workspace/local-llm-chatbot/app/index.css"},"_client-Us-wjVM-.js":{"file":"assets/client-Us-wjVM-.js","name":"client","dynamicImports":["app/routes/index.tsx?tsr-split"],"assets":["assets/index-Dx70-KsC.css"]},"app/routes/index.tsx?tsr-split":{"file":"assets/index-DWCVWgwo.js","name":"index","src":"app/routes/index.tsx?tsr-split","isDynamicEntry":true,"imports":["_client-Us-wjVM-.js"]},"virtual:$vinxi/handler/client":{"file":"assets/client-CxJtuAaW.js","name":"client","src":"virtual:$vinxi/handler/client","isEntry":true,"imports":["_client-Us-wjVM-.js"]}},"ssr":{"/Users/mitchaplin/workspace/local-llm-chatbot/app/index.css":{"file":"assets/index-Dx70-KsC.css","src":"/Users/mitchaplin/workspace/local-llm-chatbot/app/index.css"},"_ssr-iSElp7Ts.js":{"file":"assets/ssr-iSElp7Ts.js","name":"ssr","dynamicImports":["app/routes/index.tsx?tsr-split"],"assets":["assets/index-Dx70-KsC.css"]},"app/routes/index.tsx?tsr-split":{"file":"assets/index-KrdlEUpu.js","name":"index","src":"app/routes/index.tsx?tsr-split","isDynamicEntry":true,"imports":["_ssr-iSElp7Ts.js"]},"virtual:$vinxi/handler/ssr":{"file":"ssr.js","name":"ssr","src":"virtual:$vinxi/handler/ssr","isEntry":true,"imports":["_ssr-iSElp7Ts.js"]}},"server":{"_server-BMvivZ-a.js":{"file":"assets/server-BMvivZ-a.js","name":"server","dynamicImports":["app/routes/index.tsx?tsr-split=&tsr-directive-use-server="]},"app/routes/index.tsx?tsr-split=&tsr-directive-use-server=":{"file":"assets/index-CMvvxbva.js","name":"index","src":"app/routes/index.tsx?tsr-split=&tsr-directive-use-server=","isDynamicEntry":true,"imports":["_server-BMvivZ-a.js"]},"virtual:$vinxi/handler/server":{"file":"server.js","name":"server","src":"virtual:$vinxi/handler/server","isEntry":true,"imports":["_server-BMvivZ-a.js"]}}};
 
 				const routeManifest = {};
 
@@ -4239,51 +4239,51 @@ const assets$1 = {
   "/vite.svg": {
     "type": "image/svg+xml",
     "etag": "\"5d9-9/Odcje3kalF1Spc16j7Nl8xM2Y\"",
-    "mtime": "2025-02-03T04:51:25.083Z",
+    "mtime": "2025-02-04T05:51:16.680Z",
     "size": 1497,
     "path": "../public/vite.svg"
   },
-  "/assets/index-CHFZNU6o.css": {
+  "/assets/index-Dx70-KsC.css": {
     "type": "text/css; charset=utf-8",
-    "etag": "\"33a3-spx1qRjM/4e/jgcu0wt2zuSrhTs\"",
-    "mtime": "2025-02-03T04:51:25.085Z",
-    "size": 13219,
-    "path": "../public/assets/index-CHFZNU6o.css"
+    "etag": "\"23c7-eQJ9UfY/Z0TB32uIeKPYpUG98XM\"",
+    "mtime": "2025-02-04T05:51:16.684Z",
+    "size": 9159,
+    "path": "../public/assets/index-Dx70-KsC.css"
+  },
+  "/_build/assets/client-CxJtuAaW.js": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"3f-LVJMH9X/TZoUjub4tTPiXvyzOHU\"",
+    "mtime": "2025-02-04T05:51:16.682Z",
+    "size": 63,
+    "path": "../public/_build/assets/client-CxJtuAaW.js"
+  },
+  "/_build/assets/client-Us-wjVM-.js": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"3377d-1gwQJmWpwEt3o3Zy60JuU9loRs8\"",
+    "mtime": "2025-02-04T05:51:16.682Z",
+    "size": 210813,
+    "path": "../public/_build/assets/client-Us-wjVM-.js"
+  },
+  "/_build/assets/index-DWCVWgwo.js": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"1f593-Pxu4WrkrP9DjQ82/hI+eaAqigUY\"",
+    "mtime": "2025-02-04T05:51:16.682Z",
+    "size": 128403,
+    "path": "../public/_build/assets/index-DWCVWgwo.js"
+  },
+  "/_build/assets/index-Dx70-KsC.css": {
+    "type": "text/css; charset=utf-8",
+    "etag": "\"23c7-eQJ9UfY/Z0TB32uIeKPYpUG98XM\"",
+    "mtime": "2025-02-04T05:51:16.682Z",
+    "size": 9159,
+    "path": "../public/_build/assets/index-Dx70-KsC.css"
   },
   "/_build/.vite/manifest.json": {
     "type": "application/json",
-    "etag": "\"382-3oj/RXylOd+ezY3X2xb6r8UVmLo\"",
-    "mtime": "2025-02-03T04:51:25.084Z",
-    "size": 898,
+    "etag": "\"35a-VfVccLrON1wi5zZy+X2ONusjcsI\"",
+    "mtime": "2025-02-04T05:51:16.682Z",
+    "size": 858,
     "path": "../public/_build/.vite/manifest.json"
-  },
-  "/_build/assets/client-C9K3naXO.js": {
-    "type": "text/javascript; charset=utf-8",
-    "etag": "\"33801-X951yPwgHfZaY7ePsKZ0mDSYr4E\"",
-    "mtime": "2025-02-03T04:51:25.084Z",
-    "size": 210945,
-    "path": "../public/_build/assets/client-C9K3naXO.js"
-  },
-  "/_build/assets/client-XLNCQ3-F.js": {
-    "type": "text/javascript; charset=utf-8",
-    "etag": "\"3f-0IF6dCvgHRTC1Vhd3SI92EYJxOo\"",
-    "mtime": "2025-02-03T04:51:25.084Z",
-    "size": 63,
-    "path": "../public/_build/assets/client-XLNCQ3-F.js"
-  },
-  "/_build/assets/index-CHFZNU6o.css": {
-    "type": "text/css; charset=utf-8",
-    "etag": "\"33a3-spx1qRjM/4e/jgcu0wt2zuSrhTs\"",
-    "mtime": "2025-02-03T04:51:25.084Z",
-    "size": 13219,
-    "path": "../public/_build/assets/index-CHFZNU6o.css"
-  },
-  "/_build/assets/index-DwZdNnwn.js": {
-    "type": "text/javascript; charset=utf-8",
-    "etag": "\"2fce-Xa5eaK3WfICvT9bADmRhAapKeg4\"",
-    "mtime": "2025-02-03T04:51:25.084Z",
-    "size": 12238,
-    "path": "../public/_build/assets/index-DwZdNnwn.js"
   }
 };
 
@@ -4536,29 +4536,29 @@ function J(e = {}) {
     return n[t] || (n[t] = W({ ...e, ...r })), n[t];
   } };
 }
-const w = typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : typeof global < "u" ? global : {}, R = "__unctx__", B = w[R] || (w[R] = J()), K$1 = (e, n = {}) => B.get(e, n), v = "__unctx_async_handlers__", T = w[v] || (w[v] = /* @__PURE__ */ new Set()), u = { stringify: (e) => JSON.stringify(e, function(t, r) {
-  const s = this[t], c = h.find((o) => o.stringifyCondition(s));
+const w = typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : typeof global < "u" ? global : {}, R = "__unctx__", B = w[R] || (w[R] = J()), K = (e, n = {}) => B.get(e, n), v = "__unctx_async_handlers__", T = w[v] || (w[v] = /* @__PURE__ */ new Set()), u = { stringify: (e) => JSON.stringify(e, function(t, r) {
+  const s = this[t], c = y.find((o) => o.stringifyCondition(s));
   return c ? c.stringify(s) : r;
 }), parse: (e) => JSON.parse(e, function(t, r) {
   const s = this[t];
   if (isPlainObject$1(s)) {
-    const c = h.find((o) => o.parseCondition(s));
+    const c = y.find((o) => o.parseCondition(s));
     if (c) return c.parse(s);
   }
   return r;
 }), encode: (e) => {
   if (Array.isArray(e)) return e.map((t) => u.encode(t));
   if (isPlainObject$1(e)) return Object.fromEntries(Object.entries(e).map(([t, r]) => [t, u.encode(r)]));
-  const n = h.find((t) => t.stringifyCondition(e));
+  const n = y.find((t) => t.stringifyCondition(e));
   return n ? n.stringify(e) : e;
 }, decode: (e) => {
   if (isPlainObject$1(e)) {
-    const n = h.find((t) => t.parseCondition(e));
+    const n = y.find((t) => t.parseCondition(e));
     if (n) return n.parse(e);
   }
   return Array.isArray(e) ? e.map((n) => u.decode(n)) : isPlainObject$1(e) ? Object.fromEntries(Object.entries(e).map(([n, t]) => [n, u.decode(t)])) : e;
-} }, y = (e, n, t, r) => ({ key: e, stringifyCondition: n, stringify: (s) => ({ [`$${e}`]: t(s) }), parseCondition: (s) => Object.hasOwn(s, `$${e}`), parse: (s) => r(s[`$${e}`]) }), h = [y("undefined", (e) => e === undefined, () => 0, () => {
-}), y("date", (e) => e instanceof Date, (e) => e.toISOString(), (e) => new Date(e)), y("error", (e) => e instanceof Error, (e) => ({ ...e, message: e.message, stack: undefined, cause: e.cause }), (e) => Object.assign(new Error(e.message), e)), y("formData", (e) => e instanceof FormData, (e) => {
+} }, h = (e, n, t, r) => ({ key: e, stringifyCondition: n, stringify: (s) => ({ [`$${e}`]: t(s) }), parseCondition: (s) => Object.hasOwn(s, `$${e}`), parse: (s) => r(s[`$${e}`]) }), y = [h("undefined", (e) => e === undefined, () => 0, () => {
+}), h("date", (e) => e instanceof Date, (e) => e.toISOString(), (e) => new Date(e)), h("error", (e) => e instanceof Error, (e) => ({ ...e, message: e.message, stack: undefined, cause: e.cause }), (e) => Object.assign(new Error(e.message), e)), h("formData", (e) => e instanceof FormData, (e) => {
   const n = {};
   return e.forEach((t, r) => {
     const s = n[r];
@@ -4570,29 +4570,29 @@ const w = typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : type
     Array.isArray(r) ? r.forEach((s) => n.append(t, s)) : n.append(t, r);
   }), n;
 })];
-function V(e) {
+function V$1(e) {
   let n;
   const t = F(e), r = { duplex: "half", method: e.method, headers: e.headers };
   return e.node.req.body instanceof ArrayBuffer ? new Request(t, { ...r, body: e.node.req.body }) : new Request(t, { ...r, get body() {
     return n || (n = k$1(e), n);
   } });
 }
-function G$1(e) {
+function G(e) {
   var _a;
-  return (_a = e.web) != null ? _a : e.web = { request: V(e), url: F(e) }, e.web.request;
+  return (_a = e.web) != null ? _a : e.web = { request: V$1(e), url: F(e) }, e.web.request;
 }
 function Q$1() {
   return L();
 }
 const O$1 = Symbol("$HTTPEvent");
-function X(e) {
+function X$1(e) {
   return typeof e == "object" && (e instanceof H3Event || (e == null ? undefined : e[O$1]) instanceof H3Event || (e == null ? undefined : e.__is_event__) === true);
 }
 function S(e) {
   return function(...n) {
     var t;
     let r = n[0];
-    if (X(r)) n[0] = r instanceof H3Event || r.__is_event__ ? r : r[O$1];
+    if (X$1(r)) n[0] = r instanceof H3Event || r.__is_event__ ? r : r[O$1];
     else {
       if (!((t = globalThis.app.config.server.experimental) != null && t.asyncContext)) throw new Error("AsyncLocalStorage was not enabled. Use the `server.experimental.asyncContext: true` option in your app configuration to enable it. Or, pass the instance of HTTPEvent that you have as the first argument to the function.");
       if (r = Q$1(), !r) throw new Error("No HTTPEvent found in AsyncLocalStorage. Make sure you are using the function within the server runtime.");
@@ -4604,14 +4604,14 @@ function S(e) {
 const F = S(getRequestURL), Y$1 = S(getResponseStatus), Z = S(getHeaders), k$1 = S(getRequestWebStream);
 function ee() {
   var e;
-  return K$1("nitro-app", { asyncContext: !!((e = globalThis.app.config.server.experimental) != null && e.asyncContext), AsyncLocalStorage: AsyncLocalStorage });
+  return K("nitro-app", { asyncContext: !!((e = globalThis.app.config.server.experimental) != null && e.asyncContext), AsyncLocalStorage: AsyncLocalStorage });
 }
 function L() {
   return ee().use().event;
 }
-const ne = { "app_routes_index_tsx--getCount_createServerFn_handler": { functionName: "getCount_createServerFn_handler", importer: () => import('../build/index-Be9nSCbK.mjs') } }, ce$1 = eventHandler(te), m = ne;
+const ne = { "app_routes_index_tsx--chat_createServerFn_handler": { functionName: "chat_createServerFn_handler", importer: () => import('../build/index-CMvvxbva.mjs') } }, ce$1 = eventHandler(te), m = ne;
 async function te(e) {
-  const n = G$1(e), t = await oe$1(n);
+  const n = G(e), t = await oe$1(n);
   return Object.entries(Z()).forEach(([r, s]) => {
     r && s && (!t.headers.has(r) || !t.headers.get(r)) && r.toLowerCase() !== "content-length" && t.headers.set(r, s);
   }), t;
@@ -4674,38 +4674,38 @@ function pe({ tag: e, attrs: t, children: r }) {
       return null;
   }
 }
-function Ue(e) {
+function Je(e) {
   return e instanceof Headers ? new Headers(e) : Array.isArray(e) ? new Headers(e) : typeof e == "object" ? new Headers(e) : new Headers();
 }
 function oe(...e) {
   return e.reduce((t, r) => {
-    const s = Ue(r);
+    const s = Je(r);
     for (const [n, i] of s.entries()) t.set(n, i);
     return t;
   }, new Headers());
 }
 const P = { stringify: (e) => JSON.stringify(e, function(r, s) {
-  const n = this[r], i = K.find((c) => c.stringifyCondition(n));
+  const n = this[r], i = V.find((c) => c.stringifyCondition(n));
   return i ? i.stringify(n) : s;
 }), parse: (e) => JSON.parse(e, function(r, s) {
   const n = this[r];
   if (isPlainObject$1(n)) {
-    const i = K.find((c) => c.parseCondition(n));
+    const i = V.find((c) => c.parseCondition(n));
     if (i) return i.parse(n);
   }
   return s;
 }), encode: (e) => {
   if (Array.isArray(e)) return e.map((r) => P.encode(r));
   if (isPlainObject$1(e)) return Object.fromEntries(Object.entries(e).map(([r, s]) => [r, P.encode(s)]));
-  const t = K.find((r) => r.stringifyCondition(e));
+  const t = V.find((r) => r.stringifyCondition(e));
   return t ? t.stringify(e) : e;
 }, decode: (e) => {
   if (isPlainObject$1(e)) {
-    const t = K.find((r) => r.parseCondition(e));
+    const t = V.find((r) => r.parseCondition(e));
     if (t) return t.parse(e);
   }
   return Array.isArray(e) ? e.map((t) => P.decode(t)) : isPlainObject$1(e) ? Object.fromEntries(Object.entries(e).map(([t, r]) => [t, P.decode(r)])) : e;
-} }, U = (e, t, r, s) => ({ key: e, stringifyCondition: t, stringify: (n) => ({ [`$${e}`]: r(n) }), parseCondition: (n) => Object.hasOwn(n, `$${e}`), parse: (n) => s(n[`$${e}`]) }), K = [U("undefined", (e) => e === undefined, () => 0, () => {
+} }, U = (e, t, r, s) => ({ key: e, stringifyCondition: t, stringify: (n) => ({ [`$${e}`]: r(n) }), parseCondition: (n) => Object.hasOwn(n, `$${e}`), parse: (n) => s(n[`$${e}`]) }), V = [U("undefined", (e) => e === undefined, () => 0, () => {
 }), U("date", (e) => e instanceof Date, (e) => e.toISOString(), (e) => new Date(e)), U("error", (e) => e instanceof Error, (e) => ({ ...e, message: e.message, stack: undefined, cause: e.cause }), (e) => Object.assign(new Error(e.message), e)), U("formData", (e) => e instanceof FormData, (e) => {
   const t = {};
   return e.forEach((r, s) => {
@@ -4717,8 +4717,8 @@ const P = { stringify: (e) => JSON.stringify(e, function(r, s) {
   return Object.entries(e).forEach(([r, s]) => {
     Array.isArray(s) ? s.forEach((n) => t.append(r, n)) : t.append(r, s);
   }), t;
-})], Ke = () => {
-  const e = useRouter(), t = useRouterState({ select: (i) => i.matches.map((c) => c.meta).filter(Boolean) }), r = Be.useMemo(() => {
+})], Ue = () => {
+  const e = useRouter(), t = useRouterState({ select: (i) => i.matches.map((c) => c.meta).filter(Boolean) }), r = Fe.useMemo(() => {
     const i = [], c = {};
     let u;
     return [...t].reverse().forEach((l) => {
@@ -4744,19 +4744,19 @@ const P = { stringify: (e) => JSON.stringify(e, function(r, s) {
       });
     }), c;
   }, structuralSharing: true });
-  return Ze([...r, ...n, ...s], (i) => JSON.stringify(i));
+  return Ge([...r, ...n, ...s], (i) => JSON.stringify(i));
 }, Ve = () => {
-  const e = Ke();
+  const e = Ue();
   return jsx(Fragment, { children: e.map((t) => createElement(pe, { ...t, key: `tsr-meta-${JSON.stringify(t)}` })) });
-}, Xe = () => jsx(Fragment, { children: Ve() });
-function Ze(e, t) {
+}, Ke = () => jsx(Fragment, { children: Ve() });
+function Ge(e, t) {
   const r = /* @__PURE__ */ new Set();
   return e.filter((s) => {
     const n = t(s);
     return r.has(n) ? false : (r.add(n), true);
   });
 }
-const Ge = () => {
+const Ze = () => {
   const e = useRouter(), t = useRouterState({ select: (n) => {
     var i;
     const c = [], u = (i = e.ssr) == null ? undefined : i.manifest;
@@ -4772,9 +4772,9 @@ const Ge = () => {
 function Qe(e) {
   return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e;
 }
-var G, ce;
-function Ye() {
-  if (ce) return G;
+var Q, ce;
+function Xe() {
+  if (ce) return Q;
   ce = 1;
   const e = {}, t = e.hasOwnProperty, r = (a, o) => {
     for (const y in a) t.call(a, y) && o(y, a[y]);
@@ -4787,24 +4787,24 @@ function Ye() {
   }, i = (a) => "\\u" + ("0000" + a).slice(-4), c = (a, o) => {
     let y = a.toString(16);
     return o ? y : y.toUpperCase();
-  }, u = e.toString, l = Array.isArray, d = (a) => typeof Buffer == "function" && Buffer.isBuffer(a), f = (a) => u.call(a) == "[object Object]", b = (a) => typeof a == "string" || u.call(a) == "[object String]", R = (a) => typeof a == "number" || u.call(a) == "[object Number]", x = (a) => typeof a == "bigint", V = (a) => typeof a == "function", M = (a) => u.call(a) == "[object Map]", p = (a) => u.call(a) == "[object Set]", C = { "\\": "\\\\", "\b": "\\b", "\f": "\\f", "\n": "\\n", "\r": "\\r", "	": "\\t" }, _ = /[\\\b\f\n\r\t]/, $ = /[0-9]/, I = /[\xA0\u1680\u2000-\u200A\u2028\u2029\u202F\u205F\u3000]/, z = /([\uD800-\uDBFF][\uDC00-\uDFFF])|([\uD800-\uDFFF])|(['"`])|[^]/g, H = /([\uD800-\uDBFF][\uDC00-\uDFFF])|([\uD800-\uDFFF])|(['"`])|[^ !#-&\(-\[\]-_a-~]/g, m = (a, o) => {
+  }, u = e.toString, l = Array.isArray, d = (a) => typeof Buffer == "function" && Buffer.isBuffer(a), f = (a) => u.call(a) == "[object Object]", b = (a) => typeof a == "string" || u.call(a) == "[object String]", R = (a) => typeof a == "number" || u.call(a) == "[object Number]", x = (a) => typeof a == "bigint", K = (a) => typeof a == "function", I = (a) => u.call(a) == "[object Map]", p = (a) => u.call(a) == "[object Set]", C = { "\\": "\\\\", "\b": "\\b", "\f": "\\f", "\n": "\\n", "\r": "\\r", "	": "\\t" }, _ = /[\\\b\f\n\r\t]/, z = /[0-9]/, F = /[\xA0\u1680\u2000-\u200A\u2028\u2029\u202F\u205F\u3000]/, M = /([\uD800-\uDBFF][\uDC00-\uDFFF])|([\uD800-\uDFFF])|(['"`])|[^]/g, H = /([\uD800-\uDBFF][\uDC00-\uDFFF])|([\uD800-\uDFFF])|(['"`])|[^ !#-&\(-\[\]-_a-~]/g, m = (a, o) => {
     const y = () => {
-      X = N, ++o.indentLevel, N = o.indent.repeat(o.indentLevel);
+      G = N, ++o.indentLevel, N = o.indent.repeat(o.indentLevel);
     }, v = { escapeEverything: false, minimal: false, isScriptContext: false, quotes: "single", wrap: false, es6: false, json: false, compact: true, lowercaseHex: false, numbers: "decimal", indent: "	", indentLevel: 0, __inline1__: false, __inline2__: false }, j = o && o.json;
     j && (v.quotes = "double", v.wrap = true), o = s(v, o), o.quotes != "single" && o.quotes != "double" && o.quotes != "backtick" && (o.quotes = "single");
     const B = o.quotes == "double" ? '"' : o.quotes == "backtick" ? "`" : "'", E = o.compact, T = o.lowercaseHex;
-    let N = o.indent.repeat(o.indentLevel), X = "";
+    let N = o.indent.repeat(o.indentLevel), G = "";
     const _e = o.__inline1__, q = o.__inline2__, A = E ? "" : `
 `;
-    let g, L = true;
+    let g, W = true;
     const ye = o.numbers == "binary", ge = o.numbers == "octal", be = o.numbers == "decimal", we = o.numbers == "hexadecimal";
-    if (j && a && V(a.toJSON) && (a = a.toJSON()), !b(a)) {
-      if (M(a)) return a.size == 0 ? "new Map()" : (E || (o.__inline1__ = true, o.__inline2__ = false), "new Map(" + m(Array.from(a), o) + ")");
+    if (j && a && K(a.toJSON) && (a = a.toJSON()), !b(a)) {
+      if (I(a)) return a.size == 0 ? "new Map()" : (E || (o.__inline1__ = true, o.__inline2__ = false), "new Map(" + m(Array.from(a), o) + ")");
       if (p(a)) return a.size == 0 ? "new Set()" : "new Set(" + m(Array.from(a), o) + ")";
       if (d(a)) return a.length == 0 ? "Buffer.from([])" : "Buffer.from(" + m(Array.from(a), o) + ")";
       if (l(a)) return g = [], o.wrap = true, _e && (o.__inline1__ = false, o.__inline2__ = true), q || y(), n(a, (S) => {
-        L = false, q && (o.__inline2__ = false), g.push((E || q ? "" : N) + m(S, o));
-      }), L ? "[]" : q ? "[" + g.join(", ") + "]" : "[" + A + g.join("," + A) + A + (E ? "" : X) + "]";
+        W = false, q && (o.__inline2__ = false), g.push((E || q ? "" : N) + m(S, o));
+      }), W ? "[]" : q ? "[" + g.join(", ") + "]" : "[" + A + g.join("," + A) + A + (E ? "" : G) + "]";
       if (R(a) || x(a)) {
         if (j) return JSON.stringify(Number(a));
         let S;
@@ -4815,11 +4815,11 @@ function Ye() {
         } else ye ? S = "0b" + a.toString(2) : ge && (S = "0o" + a.toString(8));
         return x(a) ? S + "n" : S;
       } else return x(a) ? j ? JSON.stringify(Number(a)) : a + "n" : f(a) ? (g = [], o.wrap = true, y(), r(a, (S, w) => {
-        L = false, g.push((E ? "" : N) + m(S, o) + ":" + (E ? "" : " ") + m(w, o));
-      }), L ? "{}" : "{" + A + g.join("," + A) + A + (E ? "" : X) + "}") : j ? JSON.stringify(a) || "null" : String(a);
+        W = false, g.push((E ? "" : N) + m(S, o) + ":" + (E ? "" : " ") + m(w, o));
+      }), W ? "{}" : "{" + A + g.join("," + A) + A + (E ? "" : G) + "}") : j ? JSON.stringify(a) || "null" : String(a);
     }
-    const Re = o.escapeEverything ? z : H;
-    return g = a.replace(Re, (S, w, te, W, xe, ve) => {
+    const Re = o.escapeEverything ? M : H;
+    return g = a.replace(Re, (S, w, te, L, xe, ve) => {
       if (w) {
         if (o.minimal) return w;
         const re = w.charCodeAt(0), ne = w.charCodeAt(1);
@@ -4830,34 +4830,34 @@ function Ye() {
         return i(c(re, T)) + i(c(ne, T));
       }
       if (te) return i(c(te.charCodeAt(0), T));
-      if (S == "\0" && !j && !$.test(ve.charAt(xe + 1))) return "\\0";
-      if (W) return W == B || o.escapeEverything ? "\\" + W : W;
+      if (S == "\0" && !j && !z.test(ve.charAt(xe + 1))) return "\\0";
+      if (L) return L == B || o.escapeEverything ? "\\" + L : L;
       if (_.test(S)) return C[S];
-      if (o.minimal && !I.test(S)) return S;
+      if (o.minimal && !F.test(S)) return S;
       const Z = c(S.charCodeAt(0), T);
       return j || Z.length > 2 ? i(Z) : "\\x" + ("00" + Z).slice(-2);
     }), B == "`" && (g = g.replace(/\$\{/g, "\\${")), o.isScriptContext && (g = g.replace(/<\/(script|style)/gi, "<\\/$1").replace(/<!--/g, j ? "\\u003C!--" : "\\x3C!--")), o.wrap && (g = B + g + B), g;
   };
-  return m.version = "3.0.2", G = m, G;
+  return m.version = "3.0.2", Q = m, Q;
 }
-var et = Ye();
-const k = Qe(et), tt = `const __TSR_SSR__={matches:[],streamedValues:{},initMatch:o=>(__TSR_SSR__.matches.push(o),o.extracted?.forEach(l=>{if(l.type==="stream"){let r;l.value=new ReadableStream({start(e){r={enqueue:t=>{try{e.enqueue(t)}catch{}},close:()=>{try{e.close()}catch{}}}}}),l.value.controller=r}else{let r,e;l.value=new Promise((t,a)=>{e=a,r=t}),l.value.reject=e,l.value.resolve=r}}),!0),resolvePromise:({matchId:o,id:l,promiseState:r})=>{const e=__TSR_SSR__.matches.find(t=>t.id===o);if(e){const t=e.extracted?.[l];if(t&&t.type==="promise"&&t.value&&r.status==="success")return t.value.resolve(r.data),!0}return!1},injectChunk:({matchId:o,id:l,chunk:r})=>{const e=__TSR_SSR__.matches.find(t=>t.id===o);if(e){const t=e.extracted?.[l];if(t&&t.type==="stream"&&t.value?.controller)return t.value.controller.enqueue(new TextEncoder().encode(r.toString())),!0}return!1},closeStream:({matchId:o,id:l})=>{const r=__TSR_SSR__.matches.find(e=>e.id===o);if(r){const e=r.extracted?.[l];if(e&&e.type==="stream"&&e.value?.controller)return e.value.controller.close(),!0}return!1},cleanScripts:()=>{document.querySelectorAll(".tsr-once").forEach(o=>{o.remove()})}};window.__TSR_SSR__=__TSR_SSR__;
+var Ye = Xe();
+const k = Qe(Ye), et = `const __TSR_SSR__={matches:[],streamedValues:{},initMatch:o=>(__TSR_SSR__.matches.push(o),o.extracted?.forEach(l=>{if(l.type==="stream"){let r;l.value=new ReadableStream({start(e){r={enqueue:t=>{try{e.enqueue(t)}catch{}},close:()=>{try{e.close()}catch{}}}}}),l.value.controller=r}else{let r,e;l.value=new Promise((t,a)=>{e=a,r=t}),l.value.reject=e,l.value.resolve=r}}),!0),resolvePromise:({matchId:o,id:l,promiseState:r})=>{const e=__TSR_SSR__.matches.find(t=>t.id===o);if(e){const t=e.extracted?.[l];if(t&&t.type==="promise"&&t.value&&r.status==="success")return t.value.resolve(r.data),!0}return!1},injectChunk:({matchId:o,id:l,chunk:r})=>{const e=__TSR_SSR__.matches.find(t=>t.id===o);if(e){const t=e.extracted?.[l];if(t&&t.type==="stream"&&t.value?.controller)return t.value.controller.enqueue(new TextEncoder().encode(r.toString())),!0}return!1},closeStream:({matchId:o,id:l})=>{const r=__TSR_SSR__.matches.find(e=>e.id===o);if(r){const e=r.extracted?.[l];if(e&&e.type==="stream"&&e.value?.controller)return e.value.controller.close(),!0}return!1},cleanScripts:()=>{document.querySelectorAll(".tsr-once").forEach(o=>{o.remove()})}};window.__TSR_SSR__=__TSR_SSR__;
 `;
-function rt(e, t) {
+function tt(e, t) {
   e.ssr = { manifest: t, serializer: P }, e.serverSsr = { injectedHtml: [], streamedKeys: /* @__PURE__ */ new Set(), injectHtml: (r) => {
     const s = Promise.resolve().then(r);
     return e.serverSsr.injectedHtml.push(s), e.emit({ type: "onInjectedHtml", promise: s }), s.then(() => {
     });
   }, injectScript: (r, s) => e.serverSsr.injectHtml(async () => `<script class='tsr-once'>${await r()}; if (typeof __TSR_SSR__ !== 'undefined') __TSR_SSR__.cleanScripts()<\/script>`), streamValue: (r, s) => {
     warning(!e.serverSsr.streamedKeys.has(r), "Key has already been streamed: " + r), e.serverSsr.streamedKeys.add(r), e.serverSsr.injectScript(() => `__TSR_SSR__.streamedValues['${r}'] = { value: ${k(e.ssr.serializer.stringify(s), { isScriptContext: true, wrap: true, json: true })}}`);
-  }, onMatchSettled: at }, e.serverSsr.injectScript(() => tt, { logScript: false });
+  }, onMatchSettled: st }, e.serverSsr.injectScript(() => et, { logScript: false });
 }
-function nt(e) {
+function rt(e) {
   var t, r;
   const s = { manifest: e.ssr.manifest, dehydratedData: (r = (t = e.options).dehydrate) == null ? undefined : r.call(t) };
   e.serverSsr.injectScript(() => `__TSR_SSR__.dehydrated = ${k(e.ssr.serializer.stringify(s), { isScriptContext: true, wrap: true, json: true })}`);
 }
-function st(e, t) {
+function nt(e, t) {
   const r = [];
   return { replaced: Y(e, (n, i) => {
     if (n instanceof ReadableStream) {
@@ -4870,12 +4870,12 @@ function st(e, t) {
     return n;
   }), extracted: r };
 }
-function at(e) {
+function st(e) {
   const { router: t, match: r } = e;
   let s, n;
   if (r.loaderData !== undefined) {
-    const l = st(r.loaderData, { match: r });
-    r.loaderData = l.replaced, s = l.extracted, n = s.reduce((d, f) => Q(d, ["temp", ...f.path], undefined), { temp: l.replaced }).temp;
+    const l = nt(r.loaderData, { match: r });
+    r.loaderData = l.replaced, s = l.extracted, n = s.reduce((d, f) => X(d, ["temp", ...f.path], undefined), { temp: l.replaced }).temp;
   }
   const i = `__TSR_SSR__.initMatch(${k({ id: r.id, __beforeLoadContext: t.ssr.serializer.stringify(r.__beforeLoadContext), loaderData: t.ssr.serializer.stringify(n), error: t.ssr.serializer.stringify(r.error), extracted: s == null ? undefined : s.map((l) => pick(l, ["type", "path"])), updatedAt: r.updatedAt, status: r.status }, { isScriptContext: true, wrap: true, json: true })})`;
   t.serverSsr.injectScript(() => i), s && s.forEach((l) => l.type === "promise" ? c(l) : u(l));
@@ -4899,10 +4899,10 @@ function at(e) {
     });
   }
 }
-function Q(e, t, r) {
+function X(e, t, r) {
   if (t.length === 0) return r;
   const [s, ...n] = t;
-  return Array.isArray(e) ? e.map((i, c) => c === Number(s) ? Q(i, n, r) : i) : isPlainObject$1(e) ? { ...e, [s]: Q(e[s], n, r) } : e;
+  return Array.isArray(e) ? e.map((i, c) => c === Number(s) ? X(i, n, r) : i) : isPlainObject$1(e) ? { ...e, [s]: X(e[s], n, r) } : e;
 }
 function Y(e, t, r = []) {
   if (isPlainArray(e)) return e.map((n, i) => Y(n, t, [...r, `${i}`]));
@@ -4914,41 +4914,41 @@ function Y(e, t, r = []) {
   const s = t(e, r);
   return s !== e ? s : e;
 }
-function it({ createRouter: e, getRouterManifest: t }) {
+function at({ createRouter: e, getRouterManifest: t }) {
   return (r) => eventHandler(async (s) => {
     const n = toWebRequest(s), i = new URL(n.url), c = i.href.replace(i.origin, ""), u = createMemoryHistory({ initialEntries: [c] }), l = e();
-    rt(l, t == null ? undefined : t()), l.update({ history: u }), await l.load(), nt(l);
-    const d = ot({ event: s, router: l });
+    tt(l, t == null ? undefined : t()), l.update({ history: u }), await l.load(), rt(l);
+    const d = it({ event: s, router: l });
     return await r({ request: n, router: l, responseHeaders: d });
   });
 }
-function ot(e) {
+function it(e) {
   e.event.__tsrHeadersSent = true;
   let t = oe(getResponseHeaders(e.event), { "Content-Type": "text/html; charset=UTF-8" }, ...e.router.state.matches.map((s) => s.headers));
   const { redirect: r } = e.router.state;
   return r && (t = oe(t, r.headers, { Location: r.href })), t;
 }
-var ct = " daum[ /]| deusu/| yadirectfetcher|(?:^|[^g])news(?!sapphire)|(?<! (?:channel/|google/))google(?!(app|/google| pixel))|(?<! cu)bots?(?:\\b|_)|(?<!(?:lib))http|(?<![hg]m)score|@[a-z][\\w-]+\\.|\\(\\)|\\.com\\b|\\btime/|^<|^[\\w \\.\\-\\(?:\\):%]+(?:/v?\\d+(?:\\.\\d+)?(?:\\.\\d{1,10})*?)?(?:,|$)|^[^ ]{50,}$|^\\d+\\b|^\\w*search\\b|^\\w+/[\\w\\(\\)]*$|^active|^ad muncher|^amaya|^avsdevicesdk/|^biglotron|^bot|^bw/|^clamav[ /]|^client/|^cobweb/|^custom|^ddg[_-]android|^discourse|^dispatch/\\d|^downcast/|^duckduckgo|^email|^facebook|^getright/|^gozilla/|^hobbit|^hotzonu|^hwcdn/|^igetter/|^jeode/|^jetty/|^jigsaw|^microsoft bits|^movabletype|^mozilla/5\\.0\\s[a-z\\.-]+$|^mozilla/\\d\\.\\d \\(compatible;?\\)$|^mozilla/\\d\\.\\d \\w*$|^navermailapp|^netsurf|^offline|^openai/|^owler|^php|^postman|^python|^rank|^read|^reed|^rest|^rss|^snapchat|^space bison|^svn|^swcd |^taringa|^thumbor/|^track|^w3c|^webbandit/|^webcopier|^wget|^whatsapp|^wordpress|^xenu link sleuth|^yahoo|^yandex|^zdm/\\d|^zoom marketplace/|^{{.*}}$|adscanner/|analyzer|archive|ask jeeves/teoma|audit|bit\\.ly/|bluecoat drtr|browsex|burpcollaborator|capture|catch|check\\b|checker|chrome-lighthouse|chromeframe|classifier|cloudflare|convertify|cookiehubscan|crawl|cypress/|dareboost|datanyze|dejaclick|detect|dmbrowser|download|evc-batch/|exaleadcloudview|feed|firephp|functionize|gomezagent|headless|httrack|hubspot marketing grader|hydra|ibisbrowser|images|infrawatch|insight|inspect|iplabel|ips-agent|java(?!;)|jsjcw_scanner|library|linkcheck|mail\\.ru/|manager|measure|neustar wpm|node|nutch|offbyone|optimize|pageburst|pagespeed|parser|perl|phantomjs|pingdom|powermarks|preview|proxy|ptst[ /]\\d|reputation|resolver|retriever|rexx;|rigor|rss\\b|scanner\\.|scrape|server|sogou|sparkler/|speedcurve|spider|splash|statuscake|supercleaner|synapse|synthetic|tools|torrent|trace|transcoder|url|validator|virtuoso|wappalyzer|webglance|webkit2png|whatcms/|zgrab", lt = /bot|crawl|http|lighthouse|scan|search|spider/i, O;
-function ut() {
+var ot = " daum[ /]| deusu/| yadirectfetcher|(?:^|[^g])news(?!sapphire)|(?<! (?:channel/|google/))google(?!(app|/google| pixel))|(?<! cu)bots?(?:\\b|_)|(?<!(?:lib))http|(?<![hg]m)score|@[a-z][\\w-]+\\.|\\(\\)|\\.com\\b|\\btime/|^<|^[\\w \\.\\-\\(?:\\):%]+(?:/v?\\d+(?:\\.\\d+)?(?:\\.\\d{1,10})*?)?(?:,|$)|^[^ ]{50,}$|^\\d+\\b|^\\w*search\\b|^\\w+/[\\w\\(\\)]*$|^active|^ad muncher|^amaya|^avsdevicesdk/|^biglotron|^bot|^bw/|^clamav[ /]|^client/|^cobweb/|^custom|^ddg[_-]android|^discourse|^dispatch/\\d|^downcast/|^duckduckgo|^email|^facebook|^getright/|^gozilla/|^hobbit|^hotzonu|^hwcdn/|^igetter/|^jeode/|^jetty/|^jigsaw|^microsoft bits|^movabletype|^mozilla/5\\.0\\s[a-z\\.-]+$|^mozilla/\\d\\.\\d \\(compatible;?\\)$|^mozilla/\\d\\.\\d \\w*$|^navermailapp|^netsurf|^offline|^openai/|^owler|^php|^postman|^python|^rank|^read|^reed|^rest|^rss|^snapchat|^space bison|^svn|^swcd |^taringa|^thumbor/|^track|^w3c|^webbandit/|^webcopier|^wget|^whatsapp|^wordpress|^xenu link sleuth|^yahoo|^yandex|^zdm/\\d|^zoom marketplace/|^{{.*}}$|adscanner/|analyzer|archive|ask jeeves/teoma|audit|bit\\.ly/|bluecoat drtr|browsex|burpcollaborator|capture|catch|check\\b|checker|chrome-lighthouse|chromeframe|classifier|cloudflare|convertify|cookiehubscan|crawl|cypress/|dareboost|datanyze|dejaclick|detect|dmbrowser|download|evc-batch/|exaleadcloudview|feed|firephp|functionize|gomezagent|headless|httrack|hubspot marketing grader|hydra|ibisbrowser|images|infrawatch|insight|inspect|iplabel|ips-agent|java(?!;)|jsjcw_scanner|library|linkcheck|mail\\.ru/|manager|measure|neustar wpm|node|nutch|offbyone|optimize|pageburst|pagespeed|parser|perl|phantomjs|pingdom|powermarks|preview|proxy|ptst[ /]\\d|reputation|resolver|retriever|rexx;|rigor|rss\\b|scanner\\.|scrape|server|sogou|sparkler/|speedcurve|spider|splash|statuscake|supercleaner|synapse|synthetic|tools|torrent|trace|transcoder|url|validator|virtuoso|wappalyzer|webglance|webkit2png|whatcms/|zgrab", ct = /bot|crawl|http|lighthouse|scan|search|spider/i, O;
+function lt() {
   if (O instanceof RegExp) return O;
   try {
-    O = new RegExp(ct, "i");
+    O = new RegExp(ot, "i");
   } catch {
-    O = lt;
+    O = ct;
   }
   return O;
 }
 function le(e) {
-  return !!e && ut().test(e);
+  return !!e && lt().test(e);
 }
-function dt(e, t) {
+function ut(e, t) {
   return me(e, t);
 }
-function ft(e, t) {
+function dt(e, t) {
   return Readable$1.fromWeb(me(e, Readable$1.toWeb(t)));
 }
-const pt = /(<body)/, mt = /(<\/body>)/, ht = /(<\/html>)/, St = /(<head.*?>)/, _t = /(<\/[a-zA-Z][\w:.-]*?>)/g, yt = new TextDecoder();
-function gt() {
+const ft = /(<body)/, pt = /(<\/body>)/, mt = /(<\/html>)/, ht = /(<head.*?>)/, St = /(<\/[a-zA-Z][\w:.-]*?>)/g, _t = new TextDecoder();
+function yt() {
   let e;
   const t = new TextEncoder(), s = { stream: new ReadableStream$1({ start(n) {
     e = n;
@@ -4961,7 +4961,7 @@ function gt() {
   }, destroyed: false };
   return s;
 }
-async function bt(e, t) {
+async function gt(e, t) {
   var r, s, n;
   try {
     const i = e.getReader();
@@ -4973,28 +4973,28 @@ async function bt(e, t) {
   }
 }
 function me(e, t) {
-  const r = gt();
+  const r = yt();
   let s = true, n = "", i = "", c = false, u = false, l = "", d = "";
   function f() {
     const p = n;
     return n = "", p;
   }
   function b(p) {
-    return p instanceof Uint8Array ? yt.decode(p) : String(p);
+    return p instanceof Uint8Array ? _t.decode(p) : String(p);
   }
   const R = createControlledPromise();
   let x = 0;
   e.serverSsr.injectedHtml.forEach((p) => {
-    M(p);
+    I(p);
   });
-  const V = e.subscribe("onInjectedHtml", (p) => {
-    M(p.promise);
+  const K = e.subscribe("onInjectedHtml", (p) => {
+    I(p.promise);
   });
-  function M(p) {
+  function I(p) {
     x++, p.then((C) => {
       c ? r.write(C) : n += C;
     }).catch(R.reject).finally(() => {
-      x--, !s && x === 0 && (V(), R.resolve());
+      x--, !s && x === 0 && (K(), R.resolve());
     });
   }
   return R.then(() => {
@@ -5002,10 +5002,10 @@ function me(e, t) {
     r.end(p);
   }).catch((p) => {
     console.error("Error reading routerStream:", p), r.destroy(p);
-  }), bt(t, { onData: (p) => {
-    const C = b(p.value), _ = l + C, $ = _.match(mt), I = _.match(ht);
-    if (c || _.match(pt) && (c = true), !u) {
-      const m = _.match(St);
+  }), gt(t, { onData: (p) => {
+    const C = b(p.value), _ = l + C, z = _.match(pt), F = _.match(mt);
+    if (c || _.match(ft) && (c = true), !u) {
+      const m = _.match(ht);
       if (m) {
         u = true;
         const a = m.index, o = m[0], y = _.slice(a + o.length);
@@ -5017,13 +5017,13 @@ function me(e, t) {
       r.write(_), l = "";
       return;
     }
-    if ($ && I && $.index < I.index) {
-      const m = $.index;
+    if (z && F && z.index < F.index) {
+      const m = z.index;
       i = _.slice(m), r.write(_.slice(0, m) + f()), l = "";
       return;
     }
-    let z, H = 0;
-    for (; (z = _t.exec(_)) !== null; ) H = z.index + z[0].length;
+    let M, H = 0;
+    for (; (M = St.exec(_)) !== null; ) H = M.index + M[0].length;
     if (H > 0) {
       const m = _.slice(0, H) + f() + d;
       r.write(m), l = _.slice(H);
@@ -5034,11 +5034,11 @@ function me(e, t) {
     console.error("Error reading appStream:", p), r.destroy(p);
   } }), r.stream;
 }
-const wt = async ({ request: e, router: t, responseHeaders: r }) => {
+const bt = async ({ request: e, router: t, responseHeaders: r }) => {
   if (typeof J$1.renderToReadableStream == "function") {
     const s = await J$1.renderToReadableStream(jsx(ie, { router: t }), { signal: e.signal });
     le(e.headers.get("User-Agent")) && await s.allReady;
-    const n = dt(t, s);
+    const n = ut(t, s);
     return new Response(n, { status: t.state.statusCode, headers: r });
   }
   if (typeof J$1.renderToPipeableStream == "function") {
@@ -5054,45 +5054,45 @@ const wt = async ({ request: e, router: t, responseHeaders: r }) => {
     } catch (i) {
       console.error("Error in renderToPipeableStream:", i);
     }
-    const n = ft(t, s);
+    const n = dt(t, s);
     return new Response(n, { status: t.state.statusCode, headers: r });
   }
   throw new Error("No renderToReadableStream or renderToPipeableStream found in react-dom/server. Ensure you are using a version of react-dom that supports streaming.");
-}, Rt = () => ({ routes: { __root__: { filePath: "__root.tsx", children: ["/"], preloads: ["/_build/assets/client-XLNCQ3-F.js", "/_build/assets/client-C9K3naXO.js"] }, "/": { filePath: "index.tsx" } } });
-function xt(e) {
+}, wt = () => ({ routes: { __root__: { filePath: "__root.tsx", children: ["/"], preloads: ["/_build/assets/client-CxJtuAaW.js", "/_build/assets/client-Us-wjVM-.js"] }, "/": { filePath: "index.tsx" } } });
+function Rt(e) {
   return globalThis.MANIFEST[e];
 }
-function vt() {
+function xt() {
   var _a;
-  const e = Rt(), t = e.routes.__root__ = e.routes.__root__ || {};
+  const e = wt(), t = e.routes.__root__ = e.routes.__root__ || {};
   t.assets = t.assets || [];
-  const r = xt("client");
+  const r = Rt("client");
   return t.assets.push({ tag: "script", attrs: { src: (_a = r.inputs[r.handler]) == null ? undefined : _a.output.path, type: "module", suppressHydrationWarning: true, async: true } }), e;
 }
-function jt() {
-  const e = vt();
+function vt() {
+  const e = xt();
   return { ...e, routes: Object.fromEntries(Object.entries(e.routes).map(([t, r]) => {
     const { preloads: s, assets: n } = r;
     return [t, { preloads: s, assets: n }];
   })) };
 }
-const Et = "/_build/assets/index-CHFZNU6o.css", he = createRootRoute({ head: () => ({ meta: [{ charSet: "utf-8" }, { name: "viewport", content: "width=device-width, initial-scale=1" }, { title: "TanStack Start Starter" }], links: [{ rel: "icon", href: "/vite.svg", type: "image/svg+xml" }, { rel: "stylesheet", href: Et }] }), component: Ct });
-function Ct() {
-  return jsx(Ht, { children: jsx(Outlet, {}) });
+const jt = "/_build/assets/index-Dx70-KsC.css", he = createRootRoute({ head: () => ({ meta: [{ charSet: "utf-8" }, { name: "viewport", content: "width=device-width, initial-scale=1" }, { title: "TanStack Start Starter" }], links: [{ rel: "icon", href: "/vite.svg", type: "image/svg+xml" }, { rel: "stylesheet", href: jt }] }), component: Et });
+function Et() {
+  return jsx(Ct, { children: jsx(Outlet, {}) });
 }
-function Ht({ children: e }) {
-  return jsxs("html", { children: [jsx("head", { children: jsx(Xe, {}) }), jsxs("body", { children: [e, jsx(ScrollRestoration, {}), jsx(Ge, {})] })] });
+function Ct({ children: e }) {
+  return jsxs("html", { children: [jsx("head", { children: jsx(Ke, {}) }), jsxs("body", { children: [e, jsx(ScrollRestoration, {}), jsx(Ze, {})] })] });
 }
-const Tt = () => import('../build/index-ZImhN3sX.mjs'), At = () => import('../build/index-ZImhN3sX.mjs'), Se = createFileRoute("/")({ component: lazyRouteComponent(At, "component", () => Se.ssr), loader: lazyFn(Tt, "loader") }), Dt = Se.update({ id: "/", path: "/", getParentRoute: () => he }), kt = { IndexRoute: Dt }, $t = he._addFileChildren(kt)._addFileTypes();
-function zt() {
-  return createRouter$2({ routeTree: $t });
+const Ht = () => import('../build/index-KrdlEUpu.mjs'), Se = createFileRoute("/")({ component: lazyRouteComponent(Ht, "component", () => Se.ssr) }), Tt = Se.update({ id: "/", path: "/", getParentRoute: () => he }), At = { IndexRoute: Tt }, Dt = he._addFileChildren(At)._addFileTypes();
+function kt() {
+  return createRouter$2({ routeTree: Dt });
 }
-const Wt = it({ createRouter: zt, getRouterManifest: jt })(wt);
+const qt = at({ createRouter: kt, getRouterManifest: vt })(bt);
 
 const handlers = [
   { route: '', handler: _7rDO32, lazy: false, middleware: true, method: undefined },
   { route: '/_server', handler: ce$1, lazy: false, middleware: true, method: undefined },
-  { route: '/', handler: Wt, lazy: false, middleware: true, method: undefined }
+  { route: '/', handler: qt, lazy: false, middleware: true, method: undefined }
 ];
 
 function wrapToPromise(value) {

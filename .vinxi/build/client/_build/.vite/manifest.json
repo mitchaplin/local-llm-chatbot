@@ -1,35 +1,34 @@
 {
   "/Users/mitchaplin/workspace/local-llm-chatbot/app/index.css": {
-    "file": "assets/index-CHFZNU6o.css",
+    "file": "assets/index-Dx70-KsC.css",
     "src": "/Users/mitchaplin/workspace/local-llm-chatbot/app/index.css"
   },
-  "_client-C9K3naXO.js": {
-    "file": "assets/client-C9K3naXO.js",
+  "_client-Us-wjVM-.js": {
+    "file": "assets/client-Us-wjVM-.js",
     "name": "client",
     "dynamicImports": [
-      "app/routes/index.tsx?tsr-split",
       "app/routes/index.tsx?tsr-split"
     ],
     "assets": [
-      "assets/index-CHFZNU6o.css"
+      "assets/index-Dx70-KsC.css"
     ]
   },
   "app/routes/index.tsx?tsr-split": {
-    "file": "assets/index-DwZdNnwn.js",
+    "file": "assets/index-DWCVWgwo.js",
     "name": "index",
     "src": "app/routes/index.tsx?tsr-split",
     "isDynamicEntry": true,
     "imports": [
-      "_client-C9K3naXO.js"
+      "_client-Us-wjVM-.js"
     ]
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-XLNCQ3-F.js",
+    "file": "assets/client-CxJtuAaW.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
     "imports": [
-      "_client-C9K3naXO.js"
+      "_client-Us-wjVM-.js"
     ]
   }
 }
