@@ -3,6 +3,7 @@ import { createServerFn } from "@tanstack/start";
 import { Bot, Loader2, MessageSquare, Send, User2 } from "lucide-react";
 import { useMemo, useState } from "react";
 import Markdown from "react-markdown";
+
 type Message = {
   role: "user" | "assistant" | "tool" | "system";
   content: string;
@@ -66,17 +67,18 @@ export const Route = createFileRoute("/")({
 
 const chat = createServerFn({ method: "POST" }).handler(
   async ({ messages }: { messages: Message[] }) => {
-    return fetch("http://127.0.0.1:1234/v1/chat/completions", {
+    return fetch("http://127.0.0.1:11434/api/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "deepseek-r1-distill-qwen-32b",
+        model: "deepseek-r1:32b",
         streaming: true,
         options: {
           temperature: 0.1,
           repeat_penalty: 1.2,
+          numa: true, // testing for ARM
         },
         messages: [...messages],
       }),
