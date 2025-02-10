@@ -1,4 +1,4 @@
-# Local Chatbot LLM
+# Local LLM Chatbot
 
 This repo uses Tanstack Start as a base template. Please be sure to have your LLM running via Ollama on your local machine, and adjust your URLs accordingly.
 
